@@ -1,0 +1,20 @@
+/*
+@-moz-document url("about:newtab"), url("about:home"){
+    body{
+      background-image: linear-gradient(0deg, #40419400 90%, #2a2a2e 100%), linear-gradient(130deg, rgba(55, 52, 116, 0.8) 0%, rgba(146, 41, 41, 0.8) 100%), url('img26.jpg') !important;
+      background-position: center !important;
+      background-repeat: no-repeat !important;
+      background-size: cover !important;
+    }
+}
+
+*/
+
+@-moz-document url("about:newtab"), url("about:home"){
+    body{
+      background-image: linear-gradient(0deg, #2e2a2ad0 90%, #2a2a2e 100%), url('bkg.jpg') !important;
+      background-position: center !important;
+      background-repeat: no-repeat !important;
+      background-size: cover !important;
+    }
+}

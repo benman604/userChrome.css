@@ -1,0 +1,92 @@
+@import url('bottomtabs.css');
+/* Gradient background for the area above tabs */
+#TabsToolbar{
+  background: linear-gradient(45deg, rgba(90, 84, 211, 0.6) 0%, rgba(211, 25, 25, 0.6) 100%), url('img27.jpg');
+  /*background-size: 300% 300%;
+  animation: gradient 15s ease infinite;
+  padding-left: 3px !important;*/
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#urlbar{
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+/* Background on the URL bar when open */
+#urlbar[breakout][breakout-extend] #urlbar-background{
+  background: linear-gradient(130deg, rgba(55, 52, 116, 0.918) 0%, rgba(146, 41, 41, 0.7) 100%) !important;
+  -webkit-box-shadow: 0px 0px 32px 1px rgba(151, 151, 151, 0.1) !important; 
+  box-shadow: 0px 0px 32px 1px rgba(151, 151, 151, 0.1) !important;
+}
+
+/* Make tabs connected to page, recolor to match bottom */
+.tabbrowser-tab .tab-stack {
+  border-radius: 10px 10px 0px 0px;
+  overflow: hidden;
+  height: 100% !important;
+}
+
+.tab-background[selected="true"]{
+  background-image: linear-gradient(to bottom, #2B2A33 0%,#2B2A33 100%) !important;
+  /*background-image: none !important;*/
+  height: 100% !important;
+}
+
+.tab-background:not([selected="true"]){
+  background-image: none !important;
+  height: 100% !important;
+}
+
+
+#TabsToolbar:not(:-moz-lwtheme) .tabs-newtab-button:hover,
+#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab:hover .tab-content:not([selected="true"]) {
+  background-color:  #2e2e2e !important;
+}
+
+/* Reposition container tab indicators 
+#tabbrowser-tabs .tab-context-line {
+  display: none;
+}
+
+#tabbrowser-tabs .tab-background {
+  border-right: solid 2px var(--identity-icon-color, #2a2a2e) !important;
+  border-left: solid 2px var(--identity-icon-color, #2a2a2e) !important;
+  transition: all .15s ease-in-out !important;
+}
+
+#tabbrowser-tabs .tab-background[selected="true"] {
+  border-right: solid 5px var(--identity-icon-color, #2a2a2e) !important;
+  border-left: solid 5px var(--identity-icon-color, #2a2a2e) !important;
+}
+*/
+
+#tabbrowser-tabs .tab-context-line {
+  transform: translateY(33px);
+  opacity: 0.75 !important;
+}
+
+#nav-bar{
+  -moz-box-ordinal-group: 1 !important;
+}
+#PersonalToolbar{
+  -moz-box-ordinal-group: 2 !important;
+}
+#TabsToolbar{
+  -moz-box-ordinal-group: 3 !important;
+  padding-top: 0 !important
+}
