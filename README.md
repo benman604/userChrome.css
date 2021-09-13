@@ -2,7 +2,7 @@
 
 Customized Firefox appearance with CSS  
 
-![screenshot](screenshot.png)  
+![screenshot](screenshot.PNG)  
 
 ## Installation
 - Go to about:config, search toolkit.legacyUserProfileCustomizations.stylesheets, and set it to true  
