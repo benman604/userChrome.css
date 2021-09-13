@@ -1,9 +1,9 @@
 @import url('bottomtabs.css');
 /* Gradient background for the area above tabs */
 #TabsToolbar{
-  background: linear-gradient(45deg, rgba(90, 84, 211, 0.6) 0%, rgba(211, 25, 25, 0.6) 100%), url('img27.jpg');
-  /*background-size: 300% 300%;
-  animation: gradient 15s ease infinite;
+  background: linear-gradient(90deg, rgba(100, 100, 250, 0.5), rgba(250, 100, 100, 0.5)), url('coolbackground.svg');
+  background-size: 100% 100% !important;
+  /*animation: gradient 15s ease infinite;
   padding-left: 3px !important;*/
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -29,7 +29,7 @@
 
 /* Background on the URL bar when open */
 #urlbar[breakout][breakout-extend] #urlbar-background{
-  background: linear-gradient(130deg, rgba(55, 52, 116, 0.918) 0%, rgba(146, 41, 41, 0.7) 100%) !important;
+  background: rgba(55, 52, 116, 0.918) !important;
   -webkit-box-shadow: 0px 0px 32px 1px rgba(151, 151, 151, 0.1) !important; 
   box-shadow: 0px 0px 32px 1px rgba(151, 151, 151, 0.1) !important;
 }

@@ -12,7 +12,7 @@
 
 @-moz-document url("about:newtab"), url("about:home"){
     body{
-      background-image: linear-gradient(0deg, #2e2a2ad0 90%, #2a2a2e 100%), url('bkg.jpg') !important;
+      background-image: linear-gradient(0deg, #2e2a2a9f 90%, #2a2a2e79 100%), url('coolbackground.svg') !important;
       background-position: center !important;
       background-repeat: no-repeat !important;
       background-size: cover !important;
