@@ -1,25 +1,9 @@
-@import url('bottomtabs.css');
 /* Gradient background for the area above tabs */
 #TabsToolbar{
-  background: linear-gradient(90deg, rgba(100, 100, 250, 0.5), rgba(250, 100, 100, 0.5)), url('coolbackground.svg');
   background-size: 100% 100% !important;
-  /*animation: gradient 15s ease infinite;
-  padding-left: 3px !important;*/
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
 }
 
 #urlbar{
@@ -42,8 +26,7 @@
 }
 
 .tab-background[selected="true"]{
-  background-image: linear-gradient(to bottom, #2B2A33 0%,#2B2A33 100%) !important;
-  /*background-image: none !important;*/
+  background-image: none !important;
   height: 100% !important;
 }
 
@@ -52,34 +35,31 @@
   height: 100% !important;
 }
 
-
-#TabsToolbar:not(:-moz-lwtheme) .tabs-newtab-button:hover,
-#TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab:hover .tab-content:not([selected="true"]) {
-  background-color:  #2e2e2e !important;
-}
-
-/* Reposition container tab indicators 
-#tabbrowser-tabs .tab-context-line {
-  display: none;
-}
-
-#tabbrowser-tabs .tab-background {
-  border-right: solid 2px var(--identity-icon-color, #2a2a2e) !important;
-  border-left: solid 2px var(--identity-icon-color, #2a2a2e) !important;
-  transition: all .15s ease-in-out !important;
-}
-
-#tabbrowser-tabs .tab-background[selected="true"] {
-  border-right: solid 5px var(--identity-icon-color, #2a2a2e) !important;
-  border-left: solid 5px var(--identity-icon-color, #2a2a2e) !important;
-}
-*/
-
+/* Move container indicator to bottom */
 #tabbrowser-tabs .tab-context-line {
   transform: translateY(33px);
   opacity: 0.75 !important;
 }
 
+@media(prefers-color-scheme: dark) {
+  .tab-background[selected="true"]{
+    background-color: #2B2A33 !important;
+  }
+  #TabsToolbar{
+    background: linear-gradient(90deg, rgba(100, 100, 250, 0.5), rgba(250, 100, 100, 0.5)), url('coolbackground.svg');
+  }
+}
+
+@media(prefers-color-scheme: light) {
+  .tab-background[selected="true"]{
+    background-color: #F9F9FB !important;
+  }
+  #TabsToolbar{
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('coolbackground.svg');
+  }
+}
+
+/* Layering */
 #nav-bar{
   -moz-box-ordinal-group: 1 !important;
 }

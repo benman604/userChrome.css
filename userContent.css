@@ -12,9 +12,20 @@
 
 @-moz-document url("about:newtab"), url("about:home"){
     body{
-      background-image: linear-gradient(0deg, #2e2a2a9f 90%, #2a2a2e79 100%), url('coolbackground.svg') !important;
       background-position: center !important;
       background-repeat: no-repeat !important;
       background-size: cover !important;
+    }
+
+    @media(prefers-color-scheme: dark) {
+      body{
+        background-image: linear-gradient(0deg, #2e2a2a9f 90%, #2a2a2e79 100%), url('coolbackground.svg') !important;
+      }
+    }
+
+    @media(prefers-color-scheme: light) {
+      body{
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.699), rgb(255, 255, 255)), url('images/tiles.svg');
+      }
     }
 }
