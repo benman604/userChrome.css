@@ -11,12 +11,7 @@
   margin-bottom: 2px;
 }
 
-/* Background on the URL bar when open */
-#urlbar[breakout][breakout-extend] #urlbar-background{
-  background: rgba(55, 52, 116, 0.918) !important;
-  -webkit-box-shadow: 0px 0px 32px 1px rgba(151, 151, 151, 0.1) !important; 
-  box-shadow: 0px 0px 32px 1px rgba(151, 151, 151, 0.1) !important;
-}
+
 
 /* Make tabs connected to page, recolor to match bottom */
 .tabbrowser-tab .tab-stack {
@@ -48,6 +43,11 @@
   #TabsToolbar{
     background: linear-gradient(90deg, rgba(100, 100, 250, 0.5), rgba(250, 100, 100, 0.5)), url('coolbackground.svg');
   }
+
+  /* Background on the URL bar when open */
+  #urlbar[breakout][breakout-extend] #urlbar-background{
+    background: rgba(55, 52, 116, 0.918) !important;
+  }
 }
 
 @media(prefers-color-scheme: light) {
@@ -55,7 +55,11 @@
     background-color: #F9F9FB !important;
   }
   #TabsToolbar{
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('coolbackground.svg');
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.767), rgba(255, 255, 255, 0.75)), url('images/img27.jpg');
+  }
+  /* Background on the URL bar when open */
+  #urlbar[breakout][breakout-extend] #urlbar-background{
+    background: rgba(255, 255, 255, 0.801) !important;
   }
 }
 
