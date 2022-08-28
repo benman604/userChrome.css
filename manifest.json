@@ -1,0 +1,34 @@
+{
+    "name": "Material Palenight",
+    "manifest_version": 2,
+    "version": "3.1",
+    "theme": {
+        "colors": {
+            "icons_attention": "#89ddff",
+            "ntp_background": "#292d3e",
+            "ntp_text": "#eceff1",
+            "popup": "#292d3e",
+            "popup_border": "#292d3e",
+            "popup_highlight": "#546e7a",
+            "popup_text": "#eceff1",
+            "sidebar": "#292d3e",
+            "sidebar_border": "#292d3e",
+            "sidebar_highlight": "#546e7a",
+            "sidebar_text": "#eceff1",
+            "tab_background_separator": "#222533",
+            "tab_selected": "#3b4159",
+            "tab_line": "#222533",
+            "tab_loading": "#89ddff",
+            "tab_shadow": "none",
+            "tab_text": "#89ddff",
+            "toolbar": "#292d3e",
+            "toolbar_field": "#222533",
+            "toolbar_field_border_focus": "#89ddff",
+            "toolbar_field_text": "#eceff1",
+            "toolbar_vertical_separator": "#292d3e",
+            "frame": "#292d3e",
+            "tab_background_text": "#eceff1",
+            "bookmark_text": "#eceff1"
+        }
+    }
+}
