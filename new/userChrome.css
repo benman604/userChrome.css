@@ -1,4 +1,4 @@
-/* Gradient background for the area above tabs */
+Gradient background for the area above tabs
 #TabsToolbar{
   background-size: 100% 100% !important;
   background-position: center !important;
@@ -11,12 +11,15 @@
   margin-bottom: 2px;
 }
 
-
+:root{
+  --toolbar-bgcolor: #367945 !important;
+}
 
 /* Make tabs connected to page, recolor to match bottom */
 .tabbrowser-tab .tab-stack {
   border-radius: 10px 10px 0px 0px;
   overflow: hidden;
+  padding-top: 5px !important;
   height: 100% !important;
 }
 
@@ -38,15 +41,16 @@
 
 @media(prefers-color-scheme: dark) {
   .tab-background[selected="true"]{
-    background-color: #2B2A33 !important;
+    background-color: var(--toolbar-bgcolor) !important;
   }
   #TabsToolbar{
-    background: linear-gradient(90deg, rgba(100, 100, 250, 0.5), rgba(250, 100, 100, 0.5)), url('coolbackground.svg');
+    background-color: #1c1b22;
+    /* background: linear-gradient(90deg, rgba(100, 100, 250, 0.5), rgba(250, 100, 100, 0.5)), url('coolbackground.svg'); */
   }
 
   /* Background on the URL bar when open */
   #urlbar[breakout][breakout-extend] #urlbar-background{
-    background: rgba(55, 52, 116, 0.918) !important;
+    background: #1c1b22 !important;
   }
 }
 
