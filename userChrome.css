@@ -1,0 +1,17 @@
+@import url("bottomtabs.css");
+
+/* Make tabs connected to page, recolor to match bottom */
+.tabbrowser-tab .tab-stack {
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+    height: 100% !important;
+}
+  
+.tab-background{
+    height: 100% !important;
+}
+
+.tab-background[selected="true"]{
+    background-image: linear-gradient(to bottom, #ffffff2f 0%, #292d3e 90%) !important;
+    background-size: cover !important;
+}

@@ -1,8 +1,3 @@
-/* #viewerContainer > #viewer > .page > .canvasWrapper > canvas {
-    filter: grayscale(50%);
-    filter: invert(80%);
-} */
-
 @-moz-document url('about:home'), url('about:newtab'), url('about:privatebrowsing') { 
     .search-wrapper .logo-and-wordmark { 
         justify-content: left !important;
@@ -12,5 +7,25 @@
     }
     .logo-and-wordmark {
         margin-bottom: 0 !important;
+    }
+    .tile {
+        background-color: #292d3e !important;
+    }
+    .top-site-icon {
+        background-color: #ffffff00 !important;
+    }
+}
+
+@-moz-document url('about:home'), url('about:newtab') {
+    body{
+        background: linear-gradient(to bottom, #292d3e 5%, #292d3ea6 100%), url('images/sky.jpg') !important;
+        background-size: cover !important;
+    }
+}
+
+@-moz-document url('about:privatebrowsing') {
+    body{
+        background: linear-gradient(to bottom, #292d3e 5%, #292d3ea6 100%), url('images/yosemite.jpg') !important;
+        background-size: cover !important;
     }
 }
